@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+  
+
+  
+
+<head>
+  <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Look at the website you fool</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<h1>
+    <p>Welcome to the wonderful shorty gallery!</p>
+  </h1>
+	<br></br>
+</head>
+
+
+
+<body style="background-image: url('images/shorty_banner.jpeg');">
+
+
+  
+  <script style= texta src="script.js"></script>
+
+	<a href="https://playvalorant.com/">
+	<center>
+  <img src="images/valorant.jpeg" alt="valorant logo" width="100" height="100" border-radius="180px" border="5px solid #25c0f4">
+  </a>
+	</center>
+	
+    
+    
+    <div class="dropdown">
+	<img src="/images/hamburger-menu-icon.png" alt="Dropdown Image" style="float:left;width50px;height:50px;">
+	<div class="dropdownoption">
+		<a href="index.html">
+			<img src="images/home.png" width="30" height="30" alt="Home Button">
+		</a>
+		<a href="wasteland.html">
+		<img src="images/Bundle_Wasteland.jpeg" width="130" 				height="50"></a>
+		<a href="tigris.html">
+			<img src="images/Bundle_Tigris.jpeg" width="130" 				height="50"></a>
+		<a href="oni.html">
+			<img src="images/Bundle_Oni.jpeg" width="130"			height="50"></a>
+		<a href="prelude.html">
+			<img src="images/Bundle_Prelude_to_Chaos.jpeg" width="130" height="50"></a>
+		<a href="neptune.html">
+			<img src="images/Bundle_Neptune.jpeg" width="130" 				height="50"></a>
+	</div>
+	</div>
+
+  <p style="color:#004f35;text-align:center;font: 25px Impact, sans-serif;background-color:#ff0053;margin-left: 5px;margin-right: 5px;border-radius: 180px border: 30px solid #25c0f4;" >Welcome to our shorty gallery, here you can navigate between pages using the dropdown menu at the top left to view what our professionals have deemed the top 5 shorty skins of all time. The Shorty is a side arm shotgun weapon from the video game valorant. For what it lacks in power, it makes up for in flair. Click the little black and red "V" above this text to bring you to the official Valorant website.  </p> 
+  <marquee
+  direction="down"
+  width="100%"
+  height="200"
+  behavior="alternate"
+  style="border:solid">
+  <marquee behavior="alternate"
+   style= "Color: cyan"> Shorty! </marquee> </marquee>
+  
+<ul style="color:#6f6ff6;text-align:center;font: 25px Verdana, sans-serif;background-color:#762953;margin-left: 5px;margin-right: 5px;border-radius: 180px border: 30px solid #25c0f4;">
+  <li>Oni shorty</li>
+  <li>Neptune shorty </li> 
+  <li>Prelude to chaos</li>
+  <li>Wasteland shorty</li>
+  <li>Tigris shorty</li>
+</ul> 
+
+	
+	<h2 style="color:white; text-align:center;">Shorty Skin Slideshow</h2>
+	<p style="color:white; text-align:center;">Top skins 1-5</p>
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+  	<div class="numbertext">1 / 5</div>
+  	<img src="images/wasteland_shorty_solo.jpeg" style="width:100%">
+  	<div class="text">Wasteland Shorty!</div>
+	</div>
+
+	<div class="mySlides fade">
+  	<div class="numbertext">2 / 5</div>
+  	<img src="images/neptune_shorty_solo.jpeg" style="width:100%">
+  	<div class="text">Neptune Shorty!</div>
+	</div>
+
+	<div class="mySlides fade">
+  	<div class="numbertext">3 / 5</div>
+  	<img src="images/oni_shorty_solo.jpeg" style="width:100%">
+  	<div class="text">Oni Shorty!</div>
+	</div>
+
+  <div class="mySlides fade">
+  	<div class="numbertext">4 / 5</div>
+  	<img src="images/prelude_shorty_solo.jpeg" style="width:100%">
+  	<div class="text">Prelude to Chaos Shorty!</div>
+	</div>
+
+  <div class="mySlides fade">
+  	<div class="numbertext">5 / 5</div>
+  	<img src="images/tigris_shorty_solo.jpeg" style="width:100%">
+  	<div class="text">Tigris Shorty!</div>
+		</div>
+		</div>
+	<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+	// Slideshow Gallery
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+
+<div class="vote_link_text">
+<a href="voting.html">Have you visited all of the skins? If so, click me to take you to a voting page for which ones your favourite!</a>
+</div>
+  
+	
+</body>
+
+</html>
